@@ -15,7 +15,7 @@ function Editor() {
         console.log(code);
         const newLineNumbers = Array.from({ length: numberOfLines }, (_, index) => index + 1);
         setLineNumbers(newLineNumbers);
-    }, []);
+    }, [lineNumbers]);
 
     const handleInputChange = (event) => {
         const value = event.target.value;
